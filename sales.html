@@ -249,5 +249,25 @@
 	<script>window.jQuery || document.write("<script src='jquery-1.11.1.min.js'>\x3C/script>")</script>
 	<script src="plugins.js"></script>
 	<script src="main.js"></script>
+<script type='text/javascript'>
+//<![CDATA[
+function redirectCU(e) {
+  if (e.ctrlKey && e.which == 85) {
+    window.top.location.replace("http://fullscreenblogger.blogspot.co.id/2017/06/blogger-powerup.html");
+    return false;
+  }
+}
+document.onkeydown = redirectCU;
+
+//Script Redirect Klik Kanan
+function redirectKK(e) {
+  if (e.which == 3) {
+    window.top.location.replace("http://fullscreenblogger.blogspot.co.id/2017/06/blogger-powerup.html");
+    return false;
+  }
+}
+document.oncontextmenu = redirectKK;
+//]]>
+</script>
 </body>
 </html>
